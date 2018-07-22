@@ -3,7 +3,7 @@
 
 
 
-  ![Image text](https://raw.githubusercontent.com/lao-zhang/beautiful-girls/master/Beauty/img/1.png)
+  ![Image text](https://github.com/lao-zhang/beautiful-girls/blob/master/Beauty/img/1.png)
   
   
 
