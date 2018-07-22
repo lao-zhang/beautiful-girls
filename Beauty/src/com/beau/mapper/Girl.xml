@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.beau.mapper.BeautiesMapper">
+		<insert id="add" parameterType="Girls">
+			insert into Beauties (No,src,score) values (#{No},#{src},#{score})
+		</insert>
+		
+		<select id ="find" resultType="Girls">
+			select * from Beauties where No =#{No} 
+		</select>
+		
+		<select id ="findMax" resultType="Girls">
+			select * from Beauties order by score desc limit 1
+		</select>
+		
+		<select id ="Numbers" resultType="int">
+			select count(*) from Beauties
+		</select>
+		
+		<update id="ScoreChange" parameterType="Girls">
+			update Beauties set score = case No
+				when #{no1} then #{score1}
+				when #{no2} then #{score2}
+			end
+			where No in (#{no1},#{no2})
+		</update>
+		
+		<update id="change" parameterType="Girls">
+			update Beauties set score = #{score} where No = #{no} 
+		</update>
+		
+	</mapper>
