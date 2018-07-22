@@ -62,6 +62,17 @@
         
         MySpringMVC.xml里进行了springMVC的基本设置，如：开启对@controller注解的扫描，设置视图前后缀等等。
         
+        这些都是spring框架的基本设置，可以根据自己的情况进行修改和增减。
+        
+        
+     在Beauty/src/com/beau 目录下有五个包：controller、mapper、pojo、service、test，是整个项目的所有java代码，
+     包结构也是符合springMVC基本法的。
+        controller：控制器，负责所有的业务处理和页面跳转（返回视图）。
+        mapper：mybatis相关，数据库查询语句和自定义数据库工具类。
+        pojo：项目涉及到的对象。
+        service：解决各个子问题的具体方法，会被controller调用。
+        test：测试。
+        
     
   
   
