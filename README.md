@@ -37,15 +37,15 @@
     于两张图片的分数差，如果“丑小鸭”在一次选美中战胜了“黑天鹅”，那么“丑小鸭”得到的分数要比战胜同
     类所得分数要高得多。接下来我们看看知乎大神的讲解：
     
-    （讲解截图）
-    （作者图）
+   ![Image text](https://github.com/lao-zhang/beautiful-girls/blob/master/Beauty/img/5.png)
+   ![Image text](https://github.com/lao-zhang/beautiful-girls/blob/master/Beauty/img/4.png)
     
          3、反复进行选图之后，最后呈现出本次选美的最后胜利者（仅对你而言），也就是最符合你审美的
          妹子。这时你如果返回首页，发现你刚刚选出的那位妹子现在是全场分数最高，那么这能可能说明两点：
          1.你对妹子的高评分，让她暂时登上了榜首；
          2.在你同时操作的大部分网友们选出来的也是这个妹子。（总感觉这两点有重叠... ..）
     
-    (结果图)
+   ![Image text](https://github.com/lao-zhang/beautiful-girls/blob/master/Beauty/img/3.png)
     
     整个项目到这里，完。
     
