@@ -1,0 +1,9 @@
+
+
+表名：Beauties
+
+字段：No    Type：int(4)         属性：主键   描述：图片编号  
+字段：src   Type：varchar(100)              描述：图片路径
+字段：score Type：int(6)                    描述：图片分数
+
+Ps：字段No从1开始递增，为了方便可用设为自增1（auto_increment） 
