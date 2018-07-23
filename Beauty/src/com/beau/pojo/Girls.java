@@ -1,12 +1,12 @@
 package com.beau.pojo;
 
 
-//图片
+//图片信息
 public class Girls {
 	
-	private int No;
-	private String src;
-	private int score;
+	private int No;    //图片id，在数据库中可充当主键   
+	private String src;//图片存放路径	
+	private int score;//分数
 	
 	public Girls() {
 		
