@@ -39,7 +39,7 @@ public class PickController {
 	
 	
 	
-	//页面跳转流程：首页-》选择图片队列长度-》生成队列-》「选择界面-》下一张-》选择界面-》下一张-》。。」（循环）-》本次result
+	//页面跳转流程：首页-> 选择图片队列长度->生成队列->「选择界面->下一张->选择界面->下一张->」（循环）->本次result
 	//首页
 	@RequestMapping(value="",method=RequestMethod.GET)
 	public ModelAndView home() {
@@ -70,6 +70,7 @@ public class PickController {
 		return mav;
 	}
 	//下一张
+	//将存放图片队列的链表存进session，每次读取下一张之后将变化的链表替换进session。
 	@RequestMapping(value="next")
 	public ModelAndView next(HttpServletRequest request) throws IOException,ServletException{
 		ModelAndView mav = new ModelAndView();

@@ -22,8 +22,8 @@ public class GirlsList {
 		ListNode node = new ListNode();
 		ListNode result = node;
 		Random rand = new Random();
-		int max = mapper.Numbers();
-		LinkedHashSet <Integer>s = new LinkedHashSet<>();
+		int max = mapper.Numbers();//用户选择观看的图片数量，也是下面随机图片队列的长度
+		LinkedHashSet <Integer>s = new LinkedHashSet<>();//在最大图片数目的范围内生成随机no，然后此图入列（图片的no统一都是从1递增的）
 		while(s.size()<num) {
 			int i = rand.nextInt(max)+1;
 			s.add(i);
