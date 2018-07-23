@@ -12,9 +12,12 @@
      http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
      http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
+   <!--是用于激活那些已经在spring容器里注册过的bean（无论是通过xml的方式还是通过package sanning的方式）上面的注解-->
    <context:annotation-config />
+   <!--开启组件扫描-->
    <context:component-scan base-package="com.beau.service"/>
    
+   <!--mybatis一系列设置-->
 	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <!-- 基本属性 url、user、password -->
         <property name="url" value="jdbc:mysql://localhost:3306/MacOS?characterEncoding=UTF-8" />
